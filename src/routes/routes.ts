@@ -8,11 +8,11 @@ router.use(Express.json());
 router.use(Express.urlencoded({ extended: true }));
 
 // ----- ROTAS ------
-router.get("/", (req: Path, res: Response) => {
+router.get("/", (req: Request, res: Response) => {
   res.sendFile(path.join(__dirname, "../../public", "index.html"));
 });
 
-router.get("/todo", (req: Path, res: Response) => {
+router.get("/todo", (req: Request, res: Response) => {
   try {
     // SIMULANDO UMA CONSULTA NO BANCO DE DADOS
     const resultado = tarefas;
