@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node-dev ./src/server.ts",
-    "push": "git add . && git commit -m 'update_actions' && git push origin main",
+    "push": "git add . && git commit -m 'update_actions' && git push",
     "build": "tsc",
     "test": "jest"
   },
